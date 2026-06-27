@@ -173,10 +173,7 @@ input[type=submit]:hover {
 
 /* Ajustes para dispositivos móveis */
 @media screen and (max-width: 700px) {
-    nav a {
-        font-size: 10px;
-    }
-    
+
     label,
     input,
     input[type=submit],
