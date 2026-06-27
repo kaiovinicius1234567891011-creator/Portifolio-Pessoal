@@ -1,0 +1,183 @@
+/* Import de fonte Orbitron e inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização de seleção */
+::selection {
+    color: #000;
+    background-color: #3e0085;
+}
+
+/* Estilização geral da pagina */
+body {
+    background-color: black;
+    color: #b6b6b6;
+    font-family: "Orbitron", sans-serif;
+}
+
+/* Container Principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    justify-self: center;
+}
+
+/* Barra de navegação */
+nav {
+    background-color: #1a1a1a;
+    width: 75%;
+    margin: 0px 12.5%;
+}
+
+/* Lista não ordenada da barra de navegação */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Itens da lista de navegação */
+nav li {
+    list-style-type: none;
+    width: 25%;
+}
+
+/* Links de Navegação */
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: #b6b6b6;
+    display: block;
+    padding: 10px;
+    font-size: 12px;
+    transition: 0.5s;
+}
+nav a:hover {
+    background-color: #4f00aa;
+}
+
+
+/* Quebra tématica */
+hr {
+    border: none;
+    background-color: #4f00aa;
+    height: 2px;
+}
+
+/* Estilo padrão das Seções */
+div > div {
+    width: 100%;
+    background-color: #151515;
+    padding: 20px;
+    margin: 40px 20px;
+}
+
+div > div > * {
+    margin: 10px 0;
+}
+
+/* Formulário de contato */
+#contato form {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+label {
+    min-width: 48%;
+    margin-bottom: 10px;
+}
+
+/* Campos de entrada */
+input{
+    min-width: 45%;
+    margin-bottom: 10px;
+    border: 1px solid #505050;
+    border-width: 0 0 2px 0;
+    background-color: #2b2b2b;
+    border-radius: 4px;
+    padding: 10px;
+    color: #b6b6b6;
+    transition: 0.2s;
+}
+
+input:hover {
+    background-color: #383838;
+}
+
+input:focus {
+    border-color: #4f00aa;
+    border-width: 0 0 3px 0;
+}
+
+/* Área de Mensagem */ 
+textarea {
+    min-width: 45%;
+    height: 150px;
+    margin-bottom: 10px;
+    border: 2px solid #505050;
+    background-color: #2b2b2b;
+    border-radius: 4px;
+    padding: 10px;
+    color: #b6b6b6;
+    resize: none;
+}
+
+textarea:hover {
+    background-color: #383838;
+}
+
+textarea:focus {
+    border-color: #4f00aa;
+}
+
+/* Botão de envio */
+input[type=submit] {
+    width: 100%;
+    background-color: #4f00aa;
+    color: white;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3e0085;
+}
+
+/* Destaque temporario acessada pela navegação */
+.destaque {
+    animation: destaqueSecao 2s ease;
+}
+
+@keyframes destaqueSecao {
+    0% {
+        box-shadow: 0 0 0px #4f00aa;
+    }
+    50% {
+        box-shadow: 0 0 20px #4f00aa;
+    }
+    100% {
+        box-shadow: 0 0 0px #4f00aa;
+    }
+}
+
+/* Ajustes para dispositivos móveis */
+@media screen and (max-width: 700px) {
+    label,
+    input,
+    input[type=submit],
+    select, textarea {
+        flex: 100%;
+        min-width: 100%;
+    }
+}
