@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Pessoal</title>
+    
+    <!-- link externo css e javaScript -->
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script> 
+
+</head>
+<body>
+
+    <!-- Container Principal -->
+    <div class="container"> 
+        
+        <!-- Barra de Navegação -->
+        <nav>
+            <ul class="nav">
+                <li><a href="#sobreMim" class="nav-link">Sobre Mim</a></li>
+                <li><a href="#formacao" class="nav-link">Formação</a></li>
+                <li><a href="#portifolio" class="nav-link">Portfólio</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Seção Sobre Mim -->
+        <div id="sobreMim">
+            <h2>Sobre Mim</h2><hr>
+                <h3>Kaio Vinicius Cortez dos Santos</h3>
+
+                <p>Localização: São José dos Campos, SP</p>
+
+                <p>Hobbies: Jogar Video-Game e RPG</p>
+
+                <p>Sou iniciante na area de programação, mas busco melhorar com projetos pessoais e adquirir experiência.</p>
+        </div>
+
+        <!-- Seção Formação -->
+        <div id="formacao">
+            <h2>Formação</h2>
+            <hr>
+            <h3>Cursos</h3>
+                <p>Análise e Desenvolvimento de Sistemas</p>
+                <p>- Instituição: Uninter</p>
+                <p>- Status: Cursando</p>
+                <p>Idiomas: Português</p>
+        </div>
+
+        <!-- Seção Portifólio -->
+        <div id="portifolio">
+            <h2>Portfólio</h2>
+            <hr>
+                <p>No momento, este site é meu primeiro e único projeto concluido.</p>
+                <p>No futuro haverá mais projetos e irei disponibilizar o acesso aqui.</p>
+        </div>
+
+        <!--Seção Contato -->
+        <div id="contato">
+            <h2>Contato</h2>
+            <hr> 
+
+            <!-- Formulário para Contato -->
+            <form action="" method="post" id="formContato">
+
+                <label for="name">Nome: </label>
+                <input type="text" name="nome" id="name" placeholder="Nome Sobrenome..." required>
+
+                <label for="mail">E-mail: </label>
+                <input type="email" name="email" id="mail" placeholder="usuario@dominio.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+                <label for="msg">Mensagem: </label> <br>
+                <textarea name="mensagem" id="msg" cols="30" rows="10" placeholder="Escreva um resumo sobre o assunto..." ></textarea>
+                    
+                <input type="submit" value="Enviar" id="botaoContato">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
